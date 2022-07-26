@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/facebook-clone/static/css/main.0adab48d.css",
+    "main.js": "/facebook-clone/static/js/main.dbedb78b.js",
+    "index.html": "/facebook-clone/index.html",
+    "main.0adab48d.css.map": "/facebook-clone/static/css/main.0adab48d.css.map",
+    "main.dbedb78b.js.map": "/facebook-clone/static/js/main.dbedb78b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0adab48d.css",
+    "static/js/main.dbedb78b.js"
+  ]
+}
