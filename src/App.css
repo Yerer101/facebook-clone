@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 244, 248);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(8, 140px);
+  grid-template-rows: repeat(10, 5rem);
+  align-items: center;
+}
+
+.welcome {
+  grid-column: 1/5;
+  grid-row: 1 / span 6;
+  padding: 20px;
+}
+
+.welcome .face-blue {
+  color: rgb(4, 120, 253);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.login-container {
+  grid-column: 6/ -1;
+  grid-row: 1/ 8;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.forgot {
+  display: grid;
+  align-self: center;
+  color: blue;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.create-btn {
+  color: white;
+  margin: 0 4rem 2rem 4rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: rgb(0, 181, 1);
+}
+
+.notification {
+  grid-column: 6/ -1;
+  grid-row: 6/8;
+  margin-left: 2.8rem;
+}
+
+.notification .dark {
+  color: black;
+  font-weight: bold;
+}
+
+.border-bottom {
+  border-bottom: 2px solid rgb(234, 235, 237);
+  margin: 0 22px 0 22px;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1120px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome .face-blue {
+    color: rgb(4, 120, 253);
+    font-size: 6rem;
+    font-weight: bold;
+  }
+
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+
+  .login-container {
+    padding: 2rem;
+  }
+
+  .notification {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome .face-blue {
+    color: rgb(4, 120, 253);
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+  .welcome-title {
+    display: none;
+  }
+
+  .login-container {
+    padding: 2em;
+  }
+
+  .notification {
+    display: none;
+  }
+}
